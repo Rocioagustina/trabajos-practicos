@@ -46,11 +46,41 @@ int ObtenerString(char mensaje [256], char nombre [256]);
 
 int ValidarNombre(char nombre [256]);
 
+
+/// @fn int PedirFloat(char[], char[], char[], float*)
+/// @brief Funcion para pedir un numero flotante.
+///
+/// @param mensaje El texto que se muestra para pedir el numero flotante.
+/// @param mensajeError El texto que se muestra cuando no se obtiene el tipo de dato correcto.
+/// @param mensajeExitoso El texto que se muestra cuando se obtiene el tipo de dato correcto.
+/// @param operando El puntero donde se guarda el numero validado y casteado.
+/// @return 0 si pudo obtener el numero flotante, 1 si no pudo.
+
 int PedirFloat(char mensaje [TAM_STR], float *operando);
 
-int ValidarFloat (char operando [20]);
+/// @fn int ValidarFloat(char[])
+/// @brief Funcion para validar un numero flotante.
+///
+/// @param operando Recibe un array de caracteres y valida si es un numero flotante.
+/// @return 0 si es un numero flotante, 1 si no lo es.
+
+int ValidarFloat (char operando [TAM_INT]);
+
+/// @fn int PedirInt(char[], int*)
+/// @brief Funcion para pedir un numero entero.
+///
+/// @param mensaje El texto que se muestra para pedir el numero entero.
+/// @param operando El puntero donde se guarda el numero validado.
+/// @return 0 si pudo obtener el numero flotante, 1 si no pudo.
 
 int PedirInt(char mensaje [TAM_STR], int *operando);
+
+
+/// @fn int ValidarInt(char[])
+/// @brief Funcion para validar un numero entero.
+///
+/// @param operando Recibe un array de caracteres y valida si es un numero entero.
+/// @return 0 si es un numero entero, 1 si no lo es.
 
 int ValidarInt(char operando [TAM_INT]);
 

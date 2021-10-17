@@ -18,8 +18,26 @@ struct
  int isEmpty;
 }typedef Employee;
 
+
+/// @fn int initEmployees(Employee*, int)
+/// @brief
+///
+/// @param list
+/// @param len
+/// @return
 int initEmployees(Employee* list, int len);
 
+/// @fn int addEmployee(Employee*, int, int, char[], char[], float, int)
+/// @brief
+///
+/// @param list
+/// @param len
+/// @param id
+/// @param name
+/// @param lastName
+/// @param salary
+/// @param sector
+/// @return
 int addEmployee(Employee* list, int len, int id, char name[51],char
 lastName[51], float salary, int sector);
 
